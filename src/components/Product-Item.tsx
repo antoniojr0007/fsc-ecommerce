@@ -11,7 +11,7 @@ interface ProductItemProps {
 
 const ProductItem = ({ product }: ProductItemProps ) => {
   return (
-    <div className="flex flex-col max-w-[170px]  GAP-4">
+    <div  className="flex flex-col max-w-[170px]  GAP-4">
       <div className="relative flex  h-[170px] w-[170px] items-center justify-center bg-accent rounded-lg ">
         <Image
           src={product.imageUrls[0]}
@@ -31,8 +31,6 @@ const ProductItem = ({ product }: ProductItemProps ) => {
           </Badge>
         )}
       </div>
-
-
 
       <div className="flex flex-col gap-1">
         <p className="overflow-hidden text-ellipsis whitespace-nowrap text-sm">
@@ -56,8 +54,9 @@ const ProductItem = ({ product }: ProductItemProps ) => {
           
         </div>
 
-      </div>
-    </div>
+        </div>
+        </div>
+    
   )
 }
 
